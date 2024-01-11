@@ -27,3 +27,56 @@
   --color-green-50: rgba(116, 198, 157, 0.5);
   --color-green-25: rgba(116, 198, 157, 0.25);
 }
+/**
+* ! removing default styles
+ **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+!styling for button
+ */
+.white-btn,
+.dark-btn {
+  color: var(--color-dark-100);
+  background-color: var(--color-white-100);
+  cursor: pointer;
+  font-size: var(--h5);
+  font-family: var(--font-2);
+  border: none;
+  padding: 10px 8px;
+}
+.dark-btn {
+  color: var(--color-white-100);
+  background-color: var(--color-dark-100);
+}
+/* 
+! styling for some common text
+ */
+.text-white {
+  color: var(--color-white-100);
+}
+.text-dark {
+  color: var(--color-white-100);
+}
+.text-green {
+  color: var(--color-green-100);
+}
+/** 
+* ! style rules for label
+ **/
+.label {
+  font-family: var(--font-2);
+  font-size: var(--label);
+  letter-spacing: var(--ls);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*
+ hero styling
+ */
+.hero {
+  background-color: var(--color-green-100);
+}
