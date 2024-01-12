@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root {
   --h1: 40px;
   --h2: 32px;
@@ -80,3 +81,72 @@
 .hero {
   background-color: var(--color-green-100);
 }
+
+/* 
+navbar styling
+*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.navbar__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.title {
+  font-size: var(--h2);
+  color: var(--color-white-100);
+  font-family: var(--font-2);
+  font-weight: 500;
+}
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-family: var(--font-2);
+  font-size: var(--h5);
+}
+[class^="navbar__menu"] {
+  color: var(--color-white-100);
+  text-decoration: none;
+}
+
+/** 
+* !  style role for common classes
+ **/
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+/* for desktop */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+/* for laptop */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 740px;
+  }
+}
+/* for tablet */
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+/* for mobile 
+ @media (max-width: 568px) {
+  .container {
+    max-width: 90%;
+  }
+} */
