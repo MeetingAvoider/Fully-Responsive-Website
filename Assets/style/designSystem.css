@@ -131,6 +131,17 @@ navbar styling
 .container {
   max-width: 1140px;
   margin: auto;
+  align-items: center;
+}
+responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 45px 0;
+  gap: 10px;
 }
 /* for desktop */
 @media (max-width: 1200px) {
