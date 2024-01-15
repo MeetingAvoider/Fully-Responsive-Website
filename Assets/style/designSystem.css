@@ -143,6 +143,12 @@ responsive-img {
   padding: 45px 0;
   gap: 10px;
 }
+.common--title {
+  text-transform: capitalize;
+  font-size: var(--h1);
+  font-family: var(--font-1);
+  font-weight: bold;
+}
 /* for desktop */
 @media (max-width: 1200px) {
   .container {
